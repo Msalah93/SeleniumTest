@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [suite 51]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.Listener"/>
+  </listeners>
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="test.AutomationExerciceLoginTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="TeardownTest"/>
+          <include name="userloginWitnIvalidPassword_Methode2"/>
+        </methods>
+      </class> <!-- test.AutomationExerciceLoginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [suite 51] -->
