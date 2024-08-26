@@ -1,5 +1,7 @@
 package test;
 
+import javax.swing.text.html.CSS;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -34,7 +36,9 @@ public class AutomationExerciceLoginTest extends TestBase {
 		String expectedErrorMessage = "Your email or password is incorrect!";
 
 		LoginAutomatiionExerciciePage loginPage = PageFactory.initElements(driver, LoginAutomatiionExerciciePage.class);
-
+		
+		//driver.findElement(By.xpath("/html/body/div/div[2]/div[1]/div[2]/div[2]/button[1]/p")).click();
+		
 		loginPage.clickOnlockIcon();
 		loginPage.setEmail("salahzarga1@gmail.com");
 		loginPage.verifEmailNotEmpty();
@@ -63,7 +67,7 @@ public class AutomationExerciceLoginTest extends TestBase {
 
 		boolean isErrorDesplayed = driver.findElement(By.xpath(
 				"/html//section[@id='form']//form[@action='/login']/p[.='Your email or password is incorrect!']"))
-				.isDisplayed(); 
+				.isDisplayed();
 		Assert.assertTrue(isErrorDesplayed, "Invalid password error message is not displayed");
 	}
 }

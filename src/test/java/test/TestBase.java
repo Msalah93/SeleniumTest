@@ -25,13 +25,15 @@ public class TestBase {
 	@BeforeTest
 	public void initialize() throws Exception {
 
-		ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-web-security", "--user-data-dir", "--allow-running-insecure-content");
-
+		
 		
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/driver/chromedriver.exe");
 
-		driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-web-security","--disable-search-engine-choice-screen" , "--allow-running-insecure-content");
+
+		
+		driver = new ChromeDriver(options);
 
 		driver.manage().window().maximize();
 
@@ -49,7 +51,7 @@ public class TestBase {
            //driver.manage().deleteLocalStorage(); // Supprimer le stockage local
            //driver.manage().deleteSessionStorage(); // Supprimer le stockage de session
 		
-		TestBase.driver.quit();
+		//TestBase.driver.quit();
 	}
 
 }

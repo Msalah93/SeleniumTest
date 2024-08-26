@@ -11,6 +11,7 @@
           <include name="initialize"/>
           <include name="TeardownTest"/>
           <include name="userloginWitnIvalidPassword_Methode2"/>
+          <include name="userloginWitnIvalidPassword"/>
         </methods>
       </class> <!-- test.AutomationExerciceLoginTest -->
     </classes>

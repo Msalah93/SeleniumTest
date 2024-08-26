@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.GmailLoginTest">
-        <methods>
-          <include name="init"/>
-        </methods>
-      </class> <!-- test.GmailLoginTest -->
       <class name="test.AutomationExerciceLoginTest">
         <methods>
           <include name="initialize"/>
           <include name="TeardownTest"/>
+          <include name="userloginWitnIvalidPassword"/>
         </methods>
       </class> <!-- test.AutomationExerciceLoginTest -->
     </classes>
