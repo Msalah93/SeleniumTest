@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.AutomationExerciceLoginTest">
+      <class name="test.GmailLoginTest">
         <methods>
           <include name="initialize"/>
           <include name="TeardownTest"/>
-          <include name="userloginWitnIvalidPassword"/>
+          <include name="init"/>
         </methods>
-      </class> <!-- test.AutomationExerciceLoginTest -->
+      </class> <!-- test.GmailLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
